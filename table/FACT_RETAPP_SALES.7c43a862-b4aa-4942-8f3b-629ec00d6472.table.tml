@@ -1,0 +1,84 @@
+guid: 7c43a862-b4aa-4942-8f3b-629ec00d6472
+table:
+  name: FACT_RETAPP_SALES
+  db: thoughtspot-sales
+  schema: retail
+  db_table: FACT_RETAPP_SALES
+  connection:
+    name: GBQ
+    fqn: 2f36d918-5033-43b1-b007-16cfafc917a7
+  columns:
+  - name: salesid
+    db_column_name: salesid
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: productid
+    db_column_name: productid
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: storeid
+    db_column_name: storeid
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: quantitypurchased
+    db_column_name: quantitypurchased
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: itemprice
+    db_column_name: itemprice
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: FLOAT
+  - name: sales
+    db_column_name: sales
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: FLOAT
+  - name: recorddate
+    db_column_name: recorddate
+    properties:
+      column_type: ATTRIBUTE
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DATE
+  - name: qtypurchased
+    db_column_name: qtypurchased
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: DOUBLE
+  joins_with:
+  - name: FACT_RETAPP_SALES_to_DIM_RETAPP_PRODUCTS
+    destination:
+      name: DIM_RETAPP_PRODUCTS
+      fqn: fc20fd64-425b-4e26-98fd-6adfe1487dec
+    "on": "[FACT_RETAPP_SALES::productid] = [DIM_RETAPP_PRODUCTS::productid]"
+    type: INNER
+  - name: FACT_RETAPP_SALES_to_DIM_RETAPP_STORES
+    destination:
+      name: DIM_RETAPP_STORES
+      fqn: 4afd13ee-5f88-486f-8e7d-3112b5d4a179
+    "on": "[FACT_RETAPP_SALES::storeid] = [DIM_RETAPP_STORES::storeid]"
+    type: INNER
