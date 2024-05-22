@@ -1,0 +1,40 @@
+guid: 1e40f6d2-fa3d-415f-aa1f-254acf76c7ba
+liveboard:
+  name: Org-Org Git LB
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Total Sales by State
+      tables:
+      - id: GBQ WS
+        name: GBQ WS
+        fqn: 45cd3847-aae1-4b0e-ba54-ba779e7f1f34
+      search_query: "[State] [Sales]"
+      answer_columns:
+      - name: State
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: State
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        ordered_column_ids:
+        - State
+        - Total Sales
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: COLUMN
+        chart_columns:
+        - column_id: State
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - State
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7a670cf2-4655-4707-85f5-9b2ce6ff9546\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"4c656978-bfa7-48ab-9e95-57fdfb6b182c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"State\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+    viz_guid: cad85223-a6ca-4825-88ec-73df6cb380b0
