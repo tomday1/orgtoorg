@@ -1,0 +1,30 @@
+guid: fc20fd64-425b-4e26-98fd-6adfe1487dec
+table:
+  name: DIM_RETAPP_PRODUCTS
+  db: thoughtspot-sales
+  schema: retail
+  db_table: DIM_RETAPP_PRODUCTS
+  connection:
+    name: GBQ
+    fqn: 2f36d918-5033-43b1-b007-16cfafc917a7
+  columns:
+  - name: productid
+    db_column_name: productid
+    properties:
+      column_type: MEASURE
+      aggregation: SUM
+      index_type: DONT_INDEX
+    db_column_properties:
+      data_type: INT64
+  - name: productname
+    db_column_name: productname
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
+  - name: producttype
+    db_column_name: producttype
+    properties:
+      column_type: ATTRIBUTE
+    db_column_properties:
+      data_type: VARCHAR
