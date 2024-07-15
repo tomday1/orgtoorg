@@ -1,6 +1,6 @@
-guid: 11677bff-a64f-4d02-b3a8-6ffe84c36068
+guid: 286daf11-aa79-473f-86ef-4b9f9f766269
 liveboard:
-  name: Org-Org Git LB Demo New
+  name: Workable Org-Org Git Liveboard
   visualizations:
   - id: Viz_1
     answer:
@@ -34,7 +34,7 @@ liveboard:
         client_state: ""
         client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"State\",\"columnProperty\": {}},{\"columnId\": \"Total Sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"7a670cf2-4655-4707-85f5-9b2ce6ff9546\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"4c656978-bfa7-48ab-9e95-57fdfb6b182c\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"State\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total Sales\",\"color\": \"#2E75F0\"}]}"
       display_mode: CHART_MODE
-    viz_guid: e26df7a3-bc78-4863-89dd-58097bba81db
+    viz_guid: 05304921-a63c-4677-9d10-fb3688bc9829
   layout:
     tiles:
     - visualization_id: Viz_1
