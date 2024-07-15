@@ -1,22 +1,22 @@
 [ {
   "originalGuid" : "6ff4badf-c77f-4f8c-9e32-4e8ad166e184",
   "mappedGuid" : "6ff4badf-c77f-4f8c-9e32-4e8ad166e184",
-  "counter" : 24,
+  "counter" : 25,
   "additionalMapping" : { }
 }, {
   "originalGuid" : "439b24e2-b535-4fac-b657-107394df40ac",
   "mappedGuid" : "439b24e2-b535-4fac-b657-107394df40ac",
-  "counter" : 23,
+  "counter" : 24,
   "additionalMapping" : { }
 }, {
   "originalGuid" : "a1ef7390-bbbc-4605-8594-1c8b4874e1bb",
   "mappedGuid" : "a1ef7390-bbbc-4605-8594-1c8b4874e1bb",
-  "counter" : 24,
+  "counter" : 25,
   "additionalMapping" : { }
 }, {
   "originalGuid" : "b90de6a3-fd00-4f1e-8032-cba55c3eaabd",
   "mappedGuid" : "b90de6a3-fd00-4f1e-8032-cba55c3eaabd",
-  "counter" : 24,
+  "counter" : 25,
   "additionalMapping" : { }
 }, {
   "originalGuid" : "45cd3847-aae1-4b0e-ba54-ba779e7f1f34",
@@ -26,7 +26,7 @@
 }, {
   "originalGuid" : "c8826ed1-84a2-4bad-ae40-783752e6233b",
   "mappedGuid" : "c8826ed1-84a2-4bad-ae40-783752e6233b",
-  "counter" : 24,
+  "counter" : 25,
   "additionalMapping" : { }
 }, {
   "originalGuid" : "10ec7841-90e0-49c3-83f3-2abb89cd706a",
@@ -38,6 +38,11 @@
 }, {
   "originalGuid" : "7c43a862-b4aa-4942-8f3b-629ec00d6472",
   "mappedGuid" : "b90de6a3-fd00-4f1e-8032-cba55c3eaabd",
+  "counter" : 0,
+  "additionalMapping" : { }
+}, {
+  "originalGuid" : "89c1abcd-eae6-4451-9b75-c87374d4f34c",
+  "mappedGuid" : "89c1abcd-eae6-4451-9b75-c87374d4f34c",
   "counter" : 0,
   "additionalMapping" : { }
 }, {
@@ -55,7 +60,7 @@
 }, {
   "originalGuid" : "746e110c-cfee-471f-9866-4e5be1b246da",
   "mappedGuid" : "746e110c-cfee-471f-9866-4e5be1b246da",
-  "counter" : 23,
+  "counter" : 24,
   "additionalMapping" : { }
 }, {
   "originalGuid" : "4afd13ee-5f88-486f-8e7d-3112b5d4a179",
