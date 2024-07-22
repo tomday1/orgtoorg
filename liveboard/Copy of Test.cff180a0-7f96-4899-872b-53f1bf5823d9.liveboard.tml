@@ -1,0 +1,72 @@
+guid: cff180a0-7f96-4899-872b-53f1bf5823d9
+liveboard:
+  name: Copy of Test
+  description: Sales by Region and State
+  visualizations:
+  - id: Viz_1
+    answer:
+      name: Copy of Total Today Sales
+      tables:
+      - id: TD Demo WS (Snowflake)
+        name: TD Demo WS (Snowflake)
+        fqn: f16f1185-64f6-4184-9d4e-e2260ace0613
+      formulas:
+      - id: Date String
+        name: Date String
+        expr: "if ( [Date] = to_date ( [Text Date] , 'dd/mm/yyyy' ) ) then [Sales] else null"
+        was_auto_generated: false
+      - id: Today Sales
+        name: Today Sales
+        expr: "if ( [Date] = [Today Parameter] ) then [Sales] else null"
+        was_auto_generated: false
+      search_query: "[Record Date] [Record Date].monthly [Sales]"
+      answer_columns:
+      - name: Month(Record Date)
+      - name: Total Sales
+      table:
+        table_columns:
+        - column_id: Month(Record Date)
+          show_headline: false
+        - column_id: Total Sales
+          show_headline: false
+        client_state: ""
+        client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
+      chart:
+        type: LINE
+        chart_columns:
+        - column_id: Month(Record Date)
+        - column_id: Total Sales
+        axis_configs:
+        - x:
+          - Month(Record Date)
+          "y":
+          - Total Sales
+        client_state: ""
+        client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"gridLines\": {},\"responsiveLayoutPreference\": \"USER_PREFERRED_ON\",\"chartSpecific\": {\"dataFieldArea\": \"column\"}},\"columnProperties\": [{\"columnId\": \"Month(Record Date)\",\"columnProperty\": {\"conditionalFormatting\": {}}},{\"columnId\": \"Total Sales\",\"columnProperty\": {\"conditionalFormatting\": {}}}],\"axisProperties\": [{\"id\": \"4e7312da-376e-4828-ac70-89024b107a17\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total Sales\"],\"isOpposite\": false}},{\"id\": \"5ddb6a6e-7f49-4bd6-9cec-ef2c45b6b275\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"Month(Record Date)\"]}}],\"systemSeriesColors\": [{\"serieName\": \"9884f35c-41cb-42ac-a582-13c43bd1b2a4\",\"color\": \"#48D1E0\"},{\"serieName\": \"Total Sales\",\"color\": \"#2E75F0\"}]}"
+      display_mode: CHART_MODE
+      parameters:
+      - id: 500f0362-aff5-48c5-a7f8-7850d87242ea
+        name: Text Date
+        data_type: CHAR
+        default_value: 23/05/2024
+        description: ""
+      - id: f552cc76-2926-45c4-b8f0-1865f9ec7a43
+        name: Today Parameter
+        data_type: DATE
+        default_value: 05/31/2024
+        description: ""
+      parameter_values:
+      - key: Today Parameter
+        value: 05/31/2022
+    viz_guid: bd7331e8-f630-4e1d-ac10-d8cc6e16ff37
+  layout:
+    tabs:
+    - name: Main
+      description: ""
+      tiles:
+      - visualization_id: Viz_1
+        x: 0
+        "y": 3
+        height: 8
+        width: 6
+      id: 2cbc3a5c-d80d-4241-b566-8f5ace55360a
